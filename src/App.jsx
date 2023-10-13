@@ -5,6 +5,13 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import Yogapng from "./assets/Yoga_Rizky_Foto.png";
 import Yogajpg from "./assets/yoga.jpg";
+import Vuejs from "./assets/vuejs-sanber.png";
+import YPU from "./assets/yang-penting-usaha.png";
+import Skripsi from "./assets/halaman-home-skripsi.png";
+import NextJS from "./assets/sanbercode-nextjs-batch-39.png";
+import LuxSpace from "./assets/luxspace-yoga-reactjs.png";
+import Linkedin from "./assets/linkedin.png";
+import Instagram from "./assets/instagram.png";
 
 const customTheme = {
   base: "flex flex-col gap-2",
@@ -620,10 +627,7 @@ function App() {
               pernah saya kerjakan
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5 mx-4 md:mx-auto max-w-6xl">
-              <Card
-                imgAlt="VueJS Tugas Akhir Sanbercode"
-                imgSrc="/src/assets/vuejs-sanber.png"
-              >
+              <Card imgAlt="VueJS Tugas Akhir Sanbercode" imgSrc={Vuejs}>
                 <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <p>Tugas Akhir Vue JS Sanbercode</p>
                 </h5>
@@ -641,10 +645,7 @@ function App() {
                   </Link>
                 </p>
               </Card>
-              <Card
-                imgAlt="Laravel Halaman Home Skripsi"
-                imgSrc="/src/assets/halaman-home-skripsi.png"
-              >
+              <Card imgAlt="Laravel Halaman Home Skripsi" imgSrc={Skripsi}>
                 <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <p>
                     Sistem Tanda Tangan (SiTaTang) Digital QR Code (Projek Akhir
@@ -660,10 +661,7 @@ function App() {
                   Link Projek tidak ada karena projek tidak sampai tahap deploy
                 </p>
               </Card>
-              <Card
-                imgAlt="Tugas Akhir BWA Luxspace"
-                imgSrc="/src/assets/luxspace-yoga-reactjs.png"
-              >
+              <Card imgAlt="Tugas Akhir BWA Luxspace" imgSrc={LuxSpace}>
                 <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <p>Tugas Akhir Luxspace BWA</p>
                 </h5>
@@ -681,10 +679,7 @@ function App() {
                   </Link>
                 </p>
               </Card>
-              <Card
-                imgAlt="NextJS Tugas Akhir Sanbercode"
-                imgSrc="/src/assets/yang-penting-usaha.png"
-              >
+              <Card imgAlt="NextJS Tugas Akhir Sanbercode" imgSrc={YPU}>
                 <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <p>Tugas Akhir ReactJS Sanbercode - Website Lowongan Kerja</p>
                 </h5>
@@ -703,10 +698,7 @@ function App() {
                   </Link>
                 </p>
               </Card>
-              <Card
-                imgAlt="NextJS Tugas Akhir Sanbercode"
-                imgSrc="/src/assets/sanbercode-nextjs-batch-39.png"
-              >
+              <Card imgAlt="NextJS Tugas Akhir Sanbercode" imgSrc={NextJS}>
                 <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <p>Tugas Akhir NextJS Sanbercode - Website E-Commerce</p>
                 </h5>
@@ -739,7 +731,7 @@ function App() {
               <div className="flex flex-col  items-center pb-10 mt-5">
                 <img
                   className="w-24 h-24 mb-3 "
-                  src="/src/assets/linkedin.png"
+                  src={Linkedin}
                   alt="Linkedin"
                 />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
@@ -756,7 +748,7 @@ function App() {
               <div className="flex flex-col items-center pb-10 mt-5">
                 <img
                   className="w-24 h-24 mb-3 "
-                  src="/src/assets/instagram.png"
+                  src={Instagram}
                   alt="Instagram"
                 />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
