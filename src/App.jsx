@@ -3,6 +3,8 @@ import Footer from "./layouts/Footer";
 import Header from "./layouts/Header";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import Yogapng from "./assets/Yoga_Rizky_Foto.png";
+import Yogajpg from "./assets/yoga.jpg";
 
 const customTheme = {
   base: "flex flex-col gap-2",
@@ -47,11 +49,7 @@ function App() {
           <section className="bg-white dark:bg-gray-900" id="hero">
             <div className=" max-w-screen-xl px-4 py-8 mx-auto md:flex xl:gap-0 lg:py-16 ">
               <div className="block sm:hidden lg:mt-0 float-right">
-                <img
-                  className="rounded-full mb-4"
-                  src="/src/assets/Yoga_Rizky_Foto.png"
-                  alt="mockup"
-                />
+                <img className="rounded-full mb-4" src={Yogapng} alt="mockup" />
               </div>
               <div className="mr-auto place-self-center ">
                 <p className="font-bold">Selamat datang di portofolio saya</p>
@@ -93,11 +91,7 @@ function App() {
                 </Link> */}
               </div>
               <div className="hidden lg:mt-0 sm:flex float-right">
-                <img
-                  className="rounded-s-full"
-                  src="/src/assets/Yoga_Rizky_Foto.png"
-                  alt="mockup"
-                />
+                <img className="rounded-s-full" src={Yogapng} alt="mockup" />
               </div>
             </div>
           </section>
@@ -108,7 +102,7 @@ function App() {
               <div className="hidden lg:mt-0 lg:col-span-5 lg:flex lg:mr-6">
                 <img
                   className="rounded-r-full h-fit"
-                  src="/src/assets/Yoga.jpg"
+                  src={Yogajpg}
                   alt="mockup"
                 />
               </div>
