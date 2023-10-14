@@ -6,7 +6,7 @@ import { HashLink } from "react-router-hash-link";
 export default function Header() {
   return (
     <Navbar rounded>
-      <Navbar.Brand href="https://flowbite-react.com">
+      <Navbar.Brand>
         <span className="self-center whitespace-nowrap text-xl font-bold dark:text-white">
           Yoga Rizky Putra
         </span>

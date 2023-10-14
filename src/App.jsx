@@ -12,6 +12,12 @@ import NextJS from "./assets/sanbercode-nextjs-batch-39.png";
 import LuxSpace from "./assets/luxspace-yoga-reactjs.png";
 import Linkedin from "./assets/linkedin.png";
 import Instagram from "./assets/instagram.png";
+import LogoLaravel from "./assets/laravel-svgrepo-com.svg";
+import LogoAdonis from "./assets/adonis-js-svgrepo-com.svg";
+import LogoVue from "./assets/vue-vuejs-javascript-js-framework-svgrepo-com.svg";
+import LogoReact from "./assets/reactjs-svgrepo-com.svg";
+import LogoNext from "./assets/nextjs-fill-svgrepo-com.svg";
+import LogoNuxt from "./assets/nuxt-svgrepo-com.svg";
 
 const customTheme = {
   base: "flex flex-col gap-2",
@@ -53,12 +59,15 @@ function App() {
       <Flowbite theme={{ theme: customTheme }}>
         <main>
           {/* Hero Section */}
-          <section className="bg-white dark:bg-gray-900" id="hero">
+          <section
+            className="bg-white dark:bg-gray-900 border-b-4 border-blue-500"
+            id="hero"
+          >
             <div className=" max-w-screen-xl px-4 py-8 mx-auto md:flex xl:gap-0 lg:py-16 ">
               <div className="block sm:hidden lg:mt-0 float-right">
                 <img className="rounded-full mb-4" src={Yogapng} alt="mockup" />
               </div>
-              <div className="mr-auto place-self-center ">
+              <div className="mr-auto place-self-center text-center sm:text-left ">
                 <p className="font-bold">Selamat datang di portofolio saya</p>
                 <h1 className="max-w-2xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
                   Halo, Saya
@@ -104,7 +113,7 @@ function App() {
           </section>
           {/* End Hero Section  */}
           {/* About me */}
-          <section id="about">
+          <section id="about" className="border-b-4 border-blue-500 ">
             <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
               <div className="hidden lg:mt-0 lg:col-span-5 lg:flex lg:mr-6">
                 <img
@@ -113,7 +122,7 @@ function App() {
                   alt="mockup"
                 />
               </div>
-              <div className="mr-auto place-self-center lg:col-span-6">
+              <div className="mr-auto place-self-center text-center sm:text-left lg:col-span-6">
                 <p className="font-bold">Tentang Saya</p>
                 <h1 className="max-w-2xl mb-4 text-3xl font-bold tracking-tight leading-none md:text-3xl xl:text-4xl dark:text-white">
                   <span className="text-blue-600">
@@ -131,8 +140,13 @@ function App() {
                   style="pills"
                 >
                   <Tabs.Item active title="Kemampuan">
-                    <div className="mb-1 text-base font-medium dark:text-white">
+                    <div className="mb-1 text-base font-medium dark:text-white flex items-center">
                       Laravel
+                      <img
+                        className="w-6 h-6 ml-2"
+                        src={LogoLaravel}
+                        alt="Laravel"
+                      />
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
                       <div
@@ -140,8 +154,13 @@ function App() {
                         style={{ width: "85%" }}
                       />
                     </div>
-                    <div className="mb-1 text-base font-medium dark:text-white">
+                    <div className="mb-1 text-base font-medium dark:text-white flex items-center">
                       ReactJS
+                      <img
+                        className="w-8 h-8 ml-1"
+                        src={LogoReact}
+                        alt="Reactjs"
+                      />
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
                       <div
@@ -149,8 +168,13 @@ function App() {
                         style={{ width: "80%" }}
                       />
                     </div>
-                    <div className="mb-1 text-base font-medium dark:text-white">
+                    <div className="mb-1 text-base font-medium dark:text-white flex items-center">
                       NextJS
+                      <img
+                        className="w-6 h-6 ml-1"
+                        src={LogoNext}
+                        alt="Nextjs"
+                      />
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
                       <div
@@ -158,8 +182,9 @@ function App() {
                         style={{ width: "65%" }}
                       />
                     </div>
-                    <div className="mb-1 text-base font-medium dark:text-white">
+                    <div className="mb-1 text-base font-medium dark:text-white flex items-center">
                       VueJS
+                      <img className="w-8 h-8" src={LogoVue} alt="Vuejs" />
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
                       <div
@@ -167,8 +192,9 @@ function App() {
                         style={{ width: "55%" }}
                       />
                     </div>
-                    <div className="mb-1 text-base font-medium dark:text-white">
+                    <div className="mb-1 text-base font-medium dark:text-white flex items-center">
                       NuxtJS
+                      <img className="w-8 h-8" src={LogoNuxt} alt="Nuxtjs" />
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
                       <div
@@ -176,8 +202,13 @@ function App() {
                         style={{ width: "45%" }}
                       />
                     </div>
-                    <div className="mb-1 text-base font-medium dark:text-white">
+                    <div className="mb-1 text-base font-medium dark:text-white flex items-center">
                       AdonisJS
+                      <img
+                        className="w-6 h-6 ml-1"
+                        src={LogoAdonis}
+                        alt="Adonisjs"
+                      />
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
                       <div
@@ -618,11 +649,14 @@ function App() {
           </section>
           {/* End About me */}
           {/* Projek Saya */}
-          <section id="portofolio">
-            <h1 className="text-blue-600 text-center font-bold text-2xl">
+          <section
+            id="portofolio"
+            className="bg-blue-600 border-b-4 border-blue-500 py-4"
+          >
+            <h1 className="text-white text-center font-bold text-2xl">
               PROJEK SAYA
             </h1>
-            <h1 className="text-black text-center font-bold text-xl md:text-4xl mt-5 capitalize">
+            <h1 className="text-white text-center font-bold text-xl md:text-4xl mt-5 capitalize">
               Berikut adalah beberapa screenshot tampilan projek <br /> yang
               pernah saya kerjakan
             </h1>
