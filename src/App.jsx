@@ -739,7 +739,7 @@ function App() {
                 </h5>
                 <Link
                   className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                  to={"www.linkedin.com/in/yoga-rizky-p-1a900613b"}
+                  to={"https://linkedin.com/in/yogarizkyputra"}
                   target="_blank"
                 >
                   Yoga Rizky Putra
