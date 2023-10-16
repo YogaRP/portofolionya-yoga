@@ -1,5 +1,7 @@
 import { HashLink } from "react-router-hash-link";
 import Yogapng from "../assets/Yoga_Rizky_Foto.png";
+import { Link } from "react-router-dom";
+import CVYoga from "../assets/CV_Yoga_Rizky_Putra.pdf";
 
 const Hero = () => {
   return (
@@ -44,12 +46,14 @@ const Hero = () => {
                 />
               </svg>
             </HashLink>
-            {/* <Link
-                  href="#"
-                  className="mt-2 sm:mt-0 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-blue-600 border border-blue-600 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-                >
-                  Download CV saya
-                </Link> */}
+            <Link
+              to={CVYoga}
+              download={"CV Yoga Rizky Putra"}
+              target="_blank"
+              className="mt-2 sm:mt-0 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-blue-600 border border-blue-600 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            >
+              Download CV saya
+            </Link>
           </div>
           <div className="hidden lg:mt-0 sm:flex float-right">
             <img className="rounded-s-full" src={Yogapng} alt="mockup" />
