@@ -12,6 +12,7 @@ import NextJS from "./assets/sanbercode-nextjs-batch-39.png";
 import LuxSpace from "./assets/luxspace-yoga-reactjs.png";
 import Linkedin from "./assets/linkedin.png";
 import Instagram from "./assets/instagram.png";
+import gmail from "./assets/gmail.png";
 import LogoLaravel from "./assets/laravel-svgrepo-com.svg";
 import LogoAdonis from "./assets/adonis-js-svgrepo-com.svg";
 import LogoVue from "./assets/vue-vuejs-javascript-js-framework-svgrepo-com.svg";
@@ -761,8 +762,8 @@ function App() {
             <h1 className="text-black text-center font-bold text-xl md:text-4xl mt-5 capitalize">
               Yuk Kenal Lebih Dekat Dengan Saya
             </h1>
-            <div className="flex justify-around mt-10">
-              <div className="flex flex-col  items-center pb-10 mt-5">
+            <div className="flex flex-col md:flex-row justify-around mt-10">
+              <div className="flex flex-col items-center pb-10 mt-5">
                 <img
                   className="w-24 h-24 mb-3 "
                   src={Linkedin}
@@ -796,6 +797,19 @@ function App() {
                   target="_blank"
                 >
                   Yoga Rizky Putra
+                </Link>
+              </div>
+              <div className="flex flex-col items-center pb-10 mt-5">
+                <img className="w-24 h-24 mb-3 " src={gmail} alt="Gmail" />
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Email
+                </h5>
+                <Link
+                  className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                  to={"mailto:yogarizky51@gmail.com"}
+                  target="_blank"
+                >
+                  yogarizky51@gmail.com
                 </Link>
               </div>
             </div>

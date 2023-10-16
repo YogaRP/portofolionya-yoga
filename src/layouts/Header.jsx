@@ -14,7 +14,7 @@ export default function Header() {
       <div className="flex md:order-2">
         <HashLink smooth to={"/#sosmed"}>
           <Button className="hidden lg:block bg-blue-500 rounded-full">
-            My Contact
+            Kontak Saya
           </Button>
         </HashLink>
         {/* <button
