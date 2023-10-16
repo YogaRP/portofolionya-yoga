@@ -26,26 +26,20 @@ export default function Header() {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link>
-          <HashLink smooth to="/#home">
+        <HashLink smooth to="/#home">
+          <Navbar.Link>
             <p>Home</p>
-          </HashLink>
-        </Navbar.Link>
-        <Navbar.Link>
-          <HashLink smooth to="/#about">
-            Tentang Saya
-          </HashLink>
-        </Navbar.Link>
-        <Navbar.Link>
-          <HashLink smooth to="/#portofolio">
-            Projek Saya
-          </HashLink>
-        </Navbar.Link>
-        <Navbar.Link>
-          <HashLink smooth to="/#sosmed">
-            Sosial Media
-          </HashLink>
-        </Navbar.Link>
+          </Navbar.Link>
+        </HashLink>
+        <HashLink smooth to="/#about">
+          <Navbar.Link>Tentang Saya</Navbar.Link>
+        </HashLink>
+        <HashLink smooth to="/#portofolio">
+          <Navbar.Link>Projek Saya</Navbar.Link>
+        </HashLink>
+        <HashLink smooth to="/#sosmed">
+          <Navbar.Link>Sosial Media</Navbar.Link>
+        </HashLink>
       </Navbar.Collapse>
     </Navbar>
   );
