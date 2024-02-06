@@ -2,6 +2,7 @@ import { HashLink } from "react-router-hash-link";
 import Yogapng from "../assets/Yoga_Rizky_Foto.png";
 import { Link } from "react-router-dom";
 import CVYoga from "../assets/CV_Yoga_Rizky_Putra.pdf";
+import { useState } from "react";
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
         className="bg-white dark:bg-gray-900 border-b-4 border-blue-500"
         id="hero"
       >
-        <div className=" max-w-screen-xl px-4 py-8 mx-auto md:flex xl:gap-0 lg:py-16 ">
+        <div className="max-w-screen-xl px-4 py-8 mx-auto md:flex xl:gap-0 lg:py-16 ">
           <div className="block sm:hidden lg:mt-0 float-right">
             <img className="rounded-full mb-4" src={Yogapng} alt="mockup" />
           </div>

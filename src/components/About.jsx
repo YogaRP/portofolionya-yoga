@@ -1,15 +1,7 @@
 import { Accordion, Flowbite, Tabs } from "flowbite-react";
-
 import { Link } from "react-router-dom";
-
 import Yogajpg from "../assets/yoga.jpg";
-
-import LogoLaravel from "../assets/laravel-svgrepo-com.svg";
-import LogoAdonis from "../assets/adonis-js-svgrepo-com.svg";
-import LogoVue from "../assets/vue-vuejs-javascript-js-framework-svgrepo-com.svg";
-import LogoReact from "../assets/reactjs-svgrepo-com.svg";
-import LogoNext from "../assets/nextjs-fill-svgrepo-com.svg";
-import LogoNuxt from "../assets/nuxt-svgrepo-com.svg";
+import { kemampuan, projek } from "../data/data";
 
 const About = () => {
   const customTheme = {
@@ -45,6 +37,7 @@ const About = () => {
     },
     tabpanel: "py-3",
   };
+
   return (
     <Flowbite theme={{ theme: customTheme }}>
       <section id="about" className="border-b-4 border-blue-500 ">
@@ -66,241 +59,59 @@ const About = () => {
             </p>
             <Tabs.Group theme={customTheme} aria-label="Pills" style="pills">
               <Tabs.Item active title="Kemampuan">
-                <div className="mb-1 text-base font-medium dark:text-white flex items-center">
-                  Laravel
-                  <img
-                    className="w-6 h-6 ml-2"
-                    src={LogoLaravel}
-                    alt="Laravel"
-                  />
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                  <div
-                    className="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500"
-                    style={{ width: "85%" }}
-                  />
-                </div>
-                <div className="mb-1 text-base font-medium dark:text-white flex items-center">
-                  ReactJS
-                  <img className="w-8 h-8 ml-1" src={LogoReact} alt="Reactjs" />
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                  <div
-                    className="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500"
-                    style={{ width: "80%" }}
-                  />
-                </div>
-                <div className="mb-1 text-base font-medium dark:text-white flex items-center">
-                  NextJS
-                  <img className="w-6 h-6 ml-1" src={LogoNext} alt="Nextjs" />
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                  <div
-                    className="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500"
-                    style={{ width: "65%" }}
-                  />
-                </div>
-                <div className="mb-1 text-base font-medium dark:text-white flex items-center">
-                  VueJS
-                  <img className="w-8 h-8" src={LogoVue} alt="Vuejs" />
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                  <div
-                    className="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500"
-                    style={{ width: "55%" }}
-                  />
-                </div>
-                <div className="mb-1 text-base font-medium dark:text-white flex items-center">
-                  NuxtJS
-                  <img className="w-8 h-8" src={LogoNuxt} alt="Nuxtjs" />
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                  <div
-                    className="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500"
-                    style={{ width: "45%" }}
-                  />
-                </div>
-                <div className="mb-1 text-base font-medium dark:text-white flex items-center">
-                  AdonisJS
-                  <img
-                    className="w-6 h-6 ml-1"
-                    src={LogoAdonis}
-                    alt="Adonisjs"
-                  />
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                  <div
-                    className="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500"
-                    style={{ width: "35%" }}
-                  />
-                </div>
+                {kemampuan.map((item, index) => {
+                  return (
+                    <>
+                      <div
+                        key={item.id}
+                        className="mb-1 text-base font-medium dark:text-white flex items-center"
+                      >
+                        {item.title}
+                        <img
+                          className="w-6 h-6 ml-2"
+                          src={item.logo}
+                          alt={item.title}
+                        />
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                        <div
+                          className="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500"
+                          style={{ width: item.width }}
+                        />
+                      </div>
+                    </>
+                  );
+                })}
               </Tabs.Item>
               <Tabs.Item title="Projek">
                 <Accordion collapseAll>
-                  <Accordion.Panel>
-                    <Accordion.Title>
-                      Sistem Informasi Pengelolaan Barang Milik Negara (SIP BMN)
-                      Kemenristek BRIN Codeigniter 3
-                    </Accordion.Title>
-                    <Accordion.Content>
-                      <p className="mb-2 text-gray-500 dark:text-gray-400">
-                        Sistem untuk melakukan pengelolaan barang milik negara
-                        di kemenristek BRIN dan saya berposisi sebagai
-                        Pengembang pada sisi Frontend Website
-                      </p>
-                      <p className="mb-2 text-gray-500 dark:text-gray-400">
-                        Sistem dibangun dengan Codeigniter 3 serta menggunakan
-                        bootstrap
-                      </p>
-                      <h3 className="font-semibold">
-                        Link Projek: Tidak tersedia karena web sudah tidak aktif
-                      </h3>
-                    </Accordion.Content>
-                  </Accordion.Panel>
-                  <Accordion.Panel>
-                    <Accordion.Title>
-                      Web Pengelolaan Event IT Expo 2021 Laravel
-                    </Accordion.Title>
-                    <Accordion.Content>
-                      <p className="mb-2 text-justify text-gray-500 dark:text-gray-400">
-                        Web Pengelolaan Event IT Expo UNJ dan saya berposisi
-                        sebagai pengembang pada sisi Frontend
-                      </p>
-                      <p className="mb-2 text-gray-500 dark:text-gray-400">
-                        Sistem dibangun dengan menggunakan Laravel dan juga
-                        Bootstrap
-                      </p>
-                      <h3 className="font-semibold">
-                        Link Projek: Tidak tersedia karena web sudah tidak aktif
-                      </h3>
-                    </Accordion.Content>
-                  </Accordion.Panel>
-                  <Accordion.Panel>
-                    <Accordion.Title>
-                      Projek Pribadi: Website Lowongan Pekerjaan Menggunakan
-                      Reactjs
-                    </Accordion.Title>
-                    <Accordion.Content>
-                      <p className="mb-2 text-justify text-gray-500 dark:text-gray-400">
-                        Website ini merupakan tugas akhir dari pelatihan reactjs
-                        di sanbercode <br /> Website ini sudah mendukung fitur
-                        login, register, CRUD lowongan pekerjaan untuk yang
-                        sudah login, serta search dan filter untuk mencari
-                        pekerjaan yang sesuai keinginan Website ini masih sangat
-                        jauh dari kata baik secara tampilan karena tugas akhir
-                        ini berfokus pada fungsionalitas aplikasi.
-                      </p>
-                      <p className="mb-2 text-gray-500 dark:text-gray-400">
-                        Website dibangun menggunakan Reactjs dan Tailwind CSS.
-                      </p>
-                      <h3 className="font-semibold">
-                        Link Projek:
-                        <Link
-                          target="_blank"
-                          to={"https://yang-penting-usaha.netlify.app/"}
-                          className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                        >
-                          https://yang-penting-usaha.netlify.app/
-                        </Link>
-                      </h3>
-                    </Accordion.Content>
-                  </Accordion.Panel>
-                  <Accordion.Panel>
-                    <Accordion.Title>
-                      Projek Pribadi: Website E-Commerce Menggunakan Next JS
-                    </Accordion.Title>
-                    <Accordion.Content>
-                      <p className="mb-2 text-justify text-gray-500 dark:text-gray-400">
-                        Website ini merupakan tugas akhir dari pelatihan Next Js
-                        di kelas sanbercode <br /> Untuk role customer website
-                        ini sudah mendukung fitur login dan register customer,
-                        fitur search untuk mencari barang yang diinginkan, fitur
-                        checkout, transaksi selesai serta mengirim email kepada
-                        customer yang sudah login. Untuk role admin website ini
-                        sudah mendukung fitur login admin, CRUD untuk data
-                        kategori, CRUD untuk data produk, menampilkan
-                        keseluruhan data checkout dan transaksi di tabel, serta
-                        total data pada dashboard Website ini mungkin masih
-                        memiliki kekurangan secara tampilan karena tugas akhir
-                        ini berfokus pada fungsionalitas aplikasi.
-                      </p>
-                      <p className="mb-2 text-gray-500 dark:text-gray-400">
-                        Website dibangun menggunakan Next Js dan Tailwind CSS.
-                      </p>
-                      <h3 className="font-semibold">
-                        Link Projek:
-                        <Link
-                          target="_blank"
-                          to={
-                            "https://sanbercode-nextjs-batch-39-yogarizky51.vercel.app/"
-                          }
-                          className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                        >
-                          https://sanbercode-nextjs-batch-39-yogarizky51.vercel.app/
-                        </Link>
-                      </h3>
-                    </Accordion.Content>
-                  </Accordion.Panel>
-                  <Accordion.Panel>
-                    <Accordion.Title>
-                      Projek Tugas Kelompok: Website Penjualan Tiket - Tickety
-                      Dengan Framework Laravel
-                    </Accordion.Title>
-                    <Accordion.Content>
-                      <p className="mb-2 text-justify text-gray-500 dark:text-gray-400">
-                        Secara Garis besar Project ini untuk penjualan tiket
-                        sebuah event seperti webinar, workshop, konser, dll.
-                        Pada milestone kali ini pembeli/pelanggan dapat melihat
-                        acara hingga detail acara beserta tiket yang tersedia,
-                        akan tetapi saat ingin membeli tiket diperlukan
-                        login(Untuk ruang lingkup pengerjaan project ini user
-                        hanya dapat melakukan pembelian 1 jenis tiket dalam
-                        sekali transaksi). Fungsi Register akan membuat
-                        pembeli/pelanggan memiliki role "user".
-                      </p>
-                      <p className="mb-2 text-gray-500 dark:text-gray-400">
-                        Posisi saya pada projek ini adalah sebagai Fullstack Web
-                        Developer dengan bahasa PHP dan framework Laravel
-                      </p>
-                      <h3 className="font-semibold">
-                        Link Projek: Link website mati karena hosting tidak
-                        diperpanjang
-                      </h3>
-                    </Accordion.Content>
-                  </Accordion.Panel>
-                  <Accordion.Panel>
-                    <Accordion.Title>
-                      Projek Pribadi: Luxspace with ReactJS & Tailwind CSS
-                    </Accordion.Title>
-                    <Accordion.Content>
-                      <p className="mb-2 text-justify text-gray-500 dark:text-gray-400">
-                        Projek ini merupakan projek hasil pelatihan Reactjs dan
-                        Tailwind CSS pada salah satu kelas di buildwithangga{" "}
-                        <br /> <br /> Web yang dibuat adalah web penjualan
-                        furnitur dengan menggunakan mock-up API dari postman
-                        sebagai sumber data <br /> <br />
-                        Web yang dibuat memiliki halaman yang cukup lengkap dari
-                        halaman utama, detail barang, halaman keranjang belanja,
-                        halaman pembayaran sukses dan halaman error jika halaman
-                        yang dicari tidak ditemukan <br />
-                        <br />
-                        Beberapa bagian dari halaman pada projek ini sudah
-                        dibuat responsif, dan mohon maaf sebagian lagi belum
-                        berhasil dibuat responsif karena adanya kendala baik
-                        dari sisi projek ataupun luar projek.
-                      </p>
-                      <h3 className="font-semibold">
-                        Link Projek:
-                        <Link
-                          target="_blank"
-                          className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                          to={"https://luxspace-yoga-reactjs.netlify.app/"}
-                        >
-                          https://luxspace-yoga-reactjs.netlify.app/
-                        </Link>
-                      </h3>
-                    </Accordion.Content>
-                  </Accordion.Panel>
+                  {projek.map((item, index) => (
+                    <Accordion.Panel key={item.id}>
+                      <Accordion.Title>{item.title}</Accordion.Title>
+                      <Accordion.Content>
+                        <p className="whitespace-pre-line mb-2 text-justify text-gray-500 dark:text-gray-400">
+                          {item.desc}
+                        </p>
+                        {item.link !== undefined ? (
+                          <h3 className="font-semibold">
+                            Link Projek:
+                            <Link
+                              target="_blank"
+                              to={item.link}
+                              className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                            >
+                              {item.link}
+                            </Link>
+                          </h3>
+                        ) : (
+                          <p>
+                            Link Projek: Tidak tersedia karena web sudah tidak
+                            aktif
+                          </p>
+                        )}
+                      </Accordion.Content>
+                    </Accordion.Panel>
+                  ))}
                 </Accordion>
               </Tabs.Item>
               <Tabs.Item title="Pendidikan">
@@ -308,7 +119,7 @@ const About = () => {
                   <Accordion.Panel>
                     <Accordion.Title>Pendidikan Formal</Accordion.Title>
                     <Accordion.Content>
-                      <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                      <ul className="text-justify max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
                         <li>Universitas Negeri Jakarta (2018 - 2023)</li>
                       </ul>
                     </Accordion.Content>
@@ -316,7 +127,7 @@ const About = () => {
                   <Accordion.Panel>
                     <Accordion.Title>Pendidikan Non Formal</Accordion.Title>
                     <Accordion.Content>
-                      <ol className="space-y-4 text-gray-500 list-decimal list-inside dark:text-gray-400">
+                      <ol className="text-justify space-y-4 text-gray-500 list-decimal list-inside dark:text-gray-400">
                         <li>
                           Sanbercode
                           <ul className="pl-5 mt-2 space-y-1 list-disc list-inside">
@@ -333,8 +144,8 @@ const About = () => {
                               </Link>
                             </li>
                             <li>
-                              Reach Title "Mastered" on Next JS (November 2022)
-                              -
+                              Reach Title "Mastered" on Next JS 12 (November
+                              2022) -
                               <Link
                                 className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 to={
@@ -386,6 +197,18 @@ const About = () => {
                                 className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 to={
                                   "https://sanbercode.com/sertifikat/generate/07734b80-375b-404a-8142-d85acec77f94"
+                                }
+                              >
+                                Link Sertifikat
+                              </Link>
+                            </li>
+                            <li>
+                              Reach Title "Mastered" on Next JS 13 (Oktober
+                              2023) -
+                              <Link
+                                className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                to={
+                                  "https://sanbercode.com/certificate/in/23587a4c-4b3b-41ac-8ae6-2d5caaf49f27"
                                 }
                               >
                                 Link Sertifikat
@@ -459,6 +282,16 @@ const About = () => {
                                 Link Sertifikat
                               </Link>
                             </li>
+                            <li>
+                              Sertifikat Kelas Belajar Menguasai NestJS
+                              (November 2023) -
+                              <Link
+                                className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                to={"https://codepolitan.com/c/U5HBETM"}
+                              >
+                                Link Sertifikat
+                              </Link>
+                            </li>
                           </ul>
                         </li>
                         <li>
@@ -483,6 +316,18 @@ const About = () => {
                                 className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 to={
                                   "https://class.buildwithangga.com/certificate/full-stack-laravel-react-js-build-streaming-website-like-netflix"
+                                }
+                              >
+                                Link Sertifikat
+                              </Link>
+                            </li>
+                            <li>
+                              Full-Stack JavaScript Next JS Developer: Build Job
+                              Portal Website (November 2023) -
+                              <Link
+                                className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                to={
+                                  "https://class.buildwithangga.com/certificate/full-stack-javascript-next-js-developer-build-job-portal-website"
                                 }
                               >
                                 Link Sertifikat
@@ -528,6 +373,35 @@ const About = () => {
                                 className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 to={
                                   "https://www.dicoding.com/certificates/NVP7K5LMVZR0"
+                                }
+                              >
+                                Link Sertifikat
+                              </Link>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          Mister Coding
+                          <ul className="pl-5 mt-2 space-y-1 list-disc list-inside">
+                            <li>
+                              Menguasai Framework Nest JS dari awal sampai Mahir
+                              (Desember 2023) -
+                              <Link
+                                className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                to={
+                                  "https://www.mistercoding.com/verify-certificate/MC-LBGW3AWOZD7N"
+                                }
+                              >
+                                Link Sertifikat
+                              </Link>
+                            </li>
+                            <li>
+                              Mahir React JS & Next JS 13 App Directory + Strapi
+                              Sampai Production (Oktober 2023) -
+                              <Link
+                                className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                to={
+                                  "https://www.mistercoding.com/verify-certificate/MC-JUBY8OT9EBYZ"
                                 }
                               >
                                 Link Sertifikat

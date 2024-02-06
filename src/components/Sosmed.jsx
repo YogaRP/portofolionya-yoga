@@ -30,13 +30,26 @@ const Sosmed = () => {
           <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
             Instagram
           </h5>
-          <Link
-            className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
-            to={"https://instagram.com/yogarizkyputra?igshid=MzMyNGUyNmU2YQ=="}
-            target="_blank"
-          >
-            Yoga Rizky Putra
-          </Link>
+          <div className="flex flex-col text-center">
+            <Link
+              className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              to={
+                "https://instagram.com/yogarizkyputra?igshid=MzMyNGUyNmU2YQ=="
+              }
+              target="_blank"
+            >
+              Yoga Rizky Putra
+            </Link>
+            <Link
+              className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              to={
+                "https://www.instagram.com/yoga_rizky_putra?igsh=bWNiNG10dTI4Ynhw"
+              }
+              target="_blank"
+            >
+              Portofolionya Yoga
+            </Link>
+          </div>
         </div>
         <div className="flex flex-col items-center pb-10 mt-5">
           <img className="w-24 h-24 mb-3 " src={gmail} alt="Gmail" />
