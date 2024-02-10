@@ -15,48 +15,87 @@ import BWAJobHunt from "../assets/bwa-job-hunt.png";
 import BWADashJobHunt from "../assets/bwa-dashboard-post-a-job.png";
 
 //Kemampuan di About
-export const kemampuan = [
+export const kemampuanPieChart = [
+  {
+    name: "NextJS",
+    value: 900,
+    color: "#000000",
+  },
+  {
+    name: "Laravel",
+    value: 800,
+    color: "#ff4c41",
+  },
+  {
+    name: "ReactJS",
+    value: 750,
+    color: "#32e0ff",
+  },
+  {
+    name: "NestJS",
+    value: 500,
+    color: "#ea2845",
+  },
+  {
+    name: "VueJS",
+    value: 550,
+    color: "#4dba87",
+  },
+  {
+    name: "NuxtJS",
+    value: 400,
+    color: "#00c58e",
+  },
+  {
+    name: "AdonisJS",
+    value: 300,
+    color: "#353839",
+  },
+];
+
+//Kemampuan di About untuk Progress Bar
+export const kemampuanProgressBar = [
   {
     id: 1,
     title: "NextJS",
     logo: LogoNext,
-    width: "85%",
+    width: "90%",
   },
   {
     id: 2,
     title: "Laravel",
     logo: LogoLaravel,
-    width: "85%",
+    width: "80%",
   },
   {
     id: 3,
     title: "ReactJS",
     logo: LogoReact,
-    width: "80%",
+    width: "75%",
   },
   {
     id: 4,
     title: "NestJS",
     logo: LogoNest,
-    width: "70%",
+    width: "50%",
   },
   {
     id: 5,
     title: "VueJS",
     logo: LogoVue,
-    width: "60%",
+    width: "55%",
   },
   {
     id: 6,
     title: "NuxtJS",
     logo: LogoNuxt,
-    width: "50%",
+    width: "40%",
   },
   {
     id: 7,
     title: "AdonisJS",
     logo: LogoAdonis,
-    width: "40%",
+    width: "30%",
   },
 ];
 

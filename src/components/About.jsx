@@ -1,7 +1,9 @@
 import { Accordion, Flowbite, Tabs } from "flowbite-react";
 import { Link } from "react-router-dom";
 import Yogajpg from "../assets/yoga.jpg";
-import { kemampuan, projek } from "../data/data";
+import { kemampuanProgressBar, projek } from "../data/data";
+import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+import { PieCharts } from "./organism/Pie-Chart";
 
 const About = () => {
   const customTheme = {
@@ -13,7 +15,7 @@ const About = () => {
           "flex-wrap font-medium text-sm text-blue-500 dark:text-gray-400 ",
       },
       tabitem: {
-        base: "flex items-center justify-center mt-2 mr-2 w-28 px-4 py-2 rounded-t-lg text-sm font-medium first:ml-0 disabled:cursor-not-allowed disabled:text-gray-400 disabled:dark:text-gray-500 focus:ring-4 focus:ring-cyan-300 focus:outline-none",
+        base: "flex items-center justify-center mt-2 mr-2 px-4 py-2 rounded-t-lg text-sm font-medium first:ml-0 disabled:cursor-not-allowed disabled:text-gray-400 disabled:dark:text-gray-500 focus:ring-4 focus:ring-cyan-300 focus:outline-none",
         styles: {
           pills: {
             base: "",
@@ -57,31 +59,49 @@ const About = () => {
               pada bagian Frontend, tetapi saya juga tertarik untuk mempelajari
               backend dan menjadi Fullstack kedepannya
             </p>
-            <Tabs.Group theme={customTheme} aria-label="Pills" style="pills">
+            <Tabs.Group
+              theme={customTheme}
+              aria-label="Pills"
+              style="pills"
+              className="justify-center"
+            >
               <Tabs.Item active title="Kemampuan">
-                {kemampuan.map((item, index) => {
-                  return (
-                    <>
-                      <div
-                        key={item.id}
-                        className="mb-1 text-base font-medium dark:text-white flex items-center"
-                      >
-                        {item.title}
-                        <img
-                          className="w-6 h-6 ml-2"
-                          src={item.logo}
-                          alt={item.title}
-                        />
+                <div className="">
+                  <Tabs.Group
+                    theme={customTheme}
+                    aria-label="Pills"
+                    style="pills"
+                    className="flex justify-center"
+                  >
+                    <Tabs.Item active title="Progress Bar">
+                      {kemampuanProgressBar.map((item, index) => {
+                        return (
+                          <div key={item.id}>
+                            <div className="mb-1 text-base font-medium dark:text-white flex items-center">
+                              {item.title}
+                              <img
+                                className="w-6 h-6 ml-2"
+                                src={item.logo}
+                                alt={item.title}
+                              />
+                            </div>
+                            <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                              <div
+                                className="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500"
+                                style={{ width: item.width }}
+                              />
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </Tabs.Item>
+                    <Tabs.Item title="Pie Chart">
+                      <div className="flex rounded-xl w-auto h-auto">
+                        <PieCharts />
                       </div>
-                      <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                        <div
-                          className="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500"
-                          style={{ width: item.width }}
-                        />
-                      </div>
-                    </>
-                  );
-                })}
+                    </Tabs.Item>
+                  </Tabs.Group>
+                </div>
               </Tabs.Item>
               <Tabs.Item title="Projek">
                 <Accordion collapseAll>

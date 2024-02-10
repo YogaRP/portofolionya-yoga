@@ -3,6 +3,7 @@ import Yogapng from "../assets/Yoga_Rizky_Foto.png";
 import { Link } from "react-router-dom";
 import CVYoga from "../assets/CV_Yoga_Rizky_Putra.pdf";
 import { useState } from "react";
+import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
@@ -19,9 +20,16 @@ const Hero = () => {
             <p className="font-bold">Selamat datang di portofolio saya</p>
             <h1 className="max-w-2xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
               Halo, Saya
-              <br /> <span className="text-blue-600">Yoga Rizky Putra</span>
-              <br />
-              Frontend Web Developer
+              <br />{" "}
+              <span className="text-blue-600">
+                <ReactTyped
+                  strings={["Yoga Rizky Putra", "Frontend Web Developer"]}
+                  typeSpeed={100}
+                  loop
+                  backSpeed={20}
+                  showCursor={true}
+                />
+              </span>
             </h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               Walaupun saat ini fokus pada Frontend, tapi saya tertarik juga
