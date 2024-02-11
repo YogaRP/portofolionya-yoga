@@ -1,0 +1,38 @@
+{
+  "select-lang": "Choose Language",
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "project": "My Project",
+    "sosmed": "Social Media",
+    "contact": "My Contact"
+  },
+  "hero": {
+    "welcome": "Welcome to my portofolio",
+    "title1": "Hello, I'm",
+    "typing1": "Yoga Rizky Putra",
+    "typing2": "Frontend Web Developer",
+    "desc": "For now my focus is on the frontend side, but i'm interested to learn about the the backend side and maybe i will become a Fullstack Web Developer on the future",
+    "callMe": "Call Me",
+    "cv": "Download My CV"
+  },
+  "about": {
+    "about": "About Me",
+    "desc": "Hello, My Name is Yoga Rizky Putra and I'm a Web Developer who focuses on the Frontend side, but I'm also interested to learn the backend side and become a Fullstack Web Developer on the future.",
+    "skill": "Skill",
+    "project": "Project",
+    "education": "Education",
+    "experience": "Experience",
+    "formal": "Formal Education",
+    "nonFormal": "Non Formal Education",
+    "workExp": "My Work Experience"
+  },
+  "portofolio": {
+    "subtitle": "My Project",
+    "title": "Here Some Screenshot From My Previous Project"
+  },
+  "sosmed": {
+    "sosmed": "My Social Media",
+    "title": "Reach Me on My Social Media Below"
+  }
+}

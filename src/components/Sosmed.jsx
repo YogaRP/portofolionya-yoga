@@ -2,14 +2,16 @@ import { Link } from "react-router-dom";
 import Linkedin from "../assets/linkedin.png";
 import Instagram from "../assets/instagram.png";
 import gmail from "../assets/gmail.png";
+import { useTranslation } from "react-i18next";
 const Sosmed = () => {
+  const { t } = useTranslation();
   return (
     <section id="sosmed">
       <h1 className="text-blue-600 text-center font-bold text-2xl mt-16">
-        SOSIAL MEDIA SAYA
+        {t("sosmed.sosmed")}
       </h1>
       <h1 className="text-black text-center font-bold text-xl md:text-4xl mt-5 capitalize">
-        Yuk Kenal Lebih Dekat Dengan Saya
+        {t("sosmed.title")}
       </h1>
       <div className="flex flex-col md:flex-row justify-around mt-10">
         <div className="flex flex-col items-center pb-10 mt-5">

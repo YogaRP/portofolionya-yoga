@@ -106,24 +106,34 @@ export const projek = [
     title:
       "Sistem Informasi Pengelolaan Barang Milik Negara (SIP BMN) Kemenristek BRIN Codeigniter 3",
     desc: "Sistem untuk melakukan pengelolaan barang milik negara di kemenristek BRIN dan saya berposisi sebagai Pengembang pada sisi Frontend Website \n Sistem dibangun dengan Codeigniter 3 serta menggunakan bootstrap",
+    titleEng:
+      "State Property Management Information System (SIP BMN) Ministry of Research and Technology BRIN Codeigniter 3",
+    descEng: `This is a system for managing state property at the Ministry of Research and Technology BRIN and my position is Developer on the Frontend Website side
+    The system was built with Codeigniter 3 and uses bootstrap`,
     link: undefined,
   },
   {
     id: 2,
     title: "Web Pengelolaan Event IT Expo 2021 Laravel",
     desc: "Web Pengelolaan Event IT Expo UNJ dan saya berposisi sebagai pengembang pada sisi Frontend \n Sistem dibangun dengan menggunakan Laravel dan juga Bootstrap",
+    titleEng: "IT Expo 2021 Event Management Web using Laravel",
+    descEng: `UNJ IT Expo Event Management Web and I work as a developer on the Frontend side \n The system was built using Laravel and Bootstrap`,
     link: undefined,
   },
   {
     id: 3,
     title: "Projek Pribadi: Website Lowongan Pekerjaan Menggunakan Reactjs",
     desc: `Website ini merupakan tugas akhir dari pelatihan reactjs di sanbercode \n Website ini sudah mendukung fitur login, register, CRUD lowongan pekerjaan untuk yang sudah login, serta search dan filter untuk mencari pekerjaan yang sesuai keinginan Website ini masih sangat jauh dari kata baik secara tampilan karena tugas akhir ini berfokus pada fungsionalitas aplikasi \n Website dibangun menggunakan Reactjs dan Tailwind CSS.`,
+    titleEng: "Personal Project: Job Vacancies Website Using Reactjs",
+    descEng: `This website is the final project of ReactJS training in Sanbercode \n This website supports login, register, CRUD job vacancy features for those who have logged in, as well as search and filters to find jobs that suit your wishes. This website is still very far from being good in appearance because This final project focuses on application functionality \n The website was built using Reactjs and Tailwind CSS.`,
     link: "https://yang-penting-usaha.netlify.app/",
   },
   {
     id: 4,
     title: "Projek Pribadi: Website E-Commerce Menggunakan Next JS",
     desc: `Website ini merupakan tugas akhir dari pelatihan Next Js di kelas sanbercode \n Untuk role customer website ini sudah mendukung fitur login dan register customer, fitur search untuk mencari barang yang diinginkan, fitur checkout, transaksi selesai serta mengirim email kepada customer yang sudah login. Untuk role admin website ini sudah mendukung fitur login admin, CRUD untuk data kategori, CRUD untuk data produk, menampilkan keseluruhan data checkout dan transaksi di tabel, serta total data pada dashboard Website ini mungkin masih memiliki kekurangan secara tampilan karena tugas akhir ini berfokus pada fungsionalitas aplikasi. \n Website dibangun menggunakan Next Js dan Tailwind CSS.`,
+    titleEng: "Personal Project: E-Commerce Website Using Next JS",
+    descEng: `This website is the final project of ReactJS online bootcamp in Sanbercode \n This website supports login, register, CRUD job vacancy features for those who have logged in, as well as search and filters to find jobs that suit your wishes. This website is still very far from being good in appearance because This final project focuses on application functionality \n The website was built using Reactjs and Tailwind CSS.`,
     link: "https://sanbercode-nextjs-batch-39-yogarizky51.vercel.app/",
   },
   {
@@ -131,6 +141,9 @@ export const projek = [
     title:
       "Projek Tugas Kelompok: Website Penjualan Tiket - Tickety Dengan Framework Laravel",
     desc: `Secara Garis besar Project ini untuk penjualan tiket sebuah event seperti webinar, workshop, konser, dll. Pada milestone kali ini pembeli/pelanggan dapat melihat acara hingga detail acara beserta tiket yang tersedia, akan tetapi saat ingin membeli tiket diperlukan login(Untuk ruang lingkup pengerjaan project ini user hanya dapat melakukan pembelian 1 jenis tiket dalam sekali transaksi). Fungsi Register akan membuat pembeli/pelanggan memiliki role "user". \n Posisi saya pada projek ini adalah   Fullstack Web Developer dengan bahasa PHP dan framework Laravel`,
+    titleEng:
+      "Group Assignment Project: Ticket Sales Website - Tickety Using the Laravel Framework",
+    descEng: `In general, this project is for selling tickets to events such as webinars, workshops, concerts, etc. At this milestone, buyers/customers can view the event up to the event details along with available tickets, however, when you want to buy tickets you need to log in (for the scope of work on this project, users can only purchase 1 type of ticket in one transaction). The Register function will make buyers/customers have the "user" role. \n My position on this project is Fullstack Web Developer with PHP language and Laravel framework`,
     link: undefined,
   },
   {
@@ -140,6 +153,12 @@ export const projek = [
     furnitur dengan menggunakan mock-up API dari postman sebagai sumber data \n 
     Web yang dibuat memiliki halaman yang cukup lengkap dari halaman utama, detail barang, halaman keranjang belanja,halaman pembayaran sukses dan halaman error jika halaman yang dicari tidak ditemukan \n
     Beberapa bagian dari halaman pada projek ini sudah dibuat responsif, dan mohon maaf sebagian lagi belum berhasil dibuat responsif karena adanya kendala baik dari sisi projek ataupun luar projek.`,
+    titleEng: "Personal Project: Luxspace with ReactJS & Tailwind CSS",
+    descEng: `This project is a project resulting from Reactjs and Tailwind CSS training in one of the classes at buildwithangga\n The website created is a sales website
+    furniture using mock-up API from postman as data source \n
+    The website created has quite complete pages from the main page, item details, shopping cart page, successful payment page and error page if the page you are looking for is not found \n
+    Some parts of the pages in this project have been made responsive, and I'm sorry, some parts have not been made responsive due to obstacles both from the project side and outside the project.`,
+
     link: "https://luxspace-yoga-reactjs.netlify.app/",
   },
   {
@@ -148,6 +167,10 @@ export const projek = [
     desc: `Projek ini merupakan projek skripsi saya yaitu membuat tanda tangan digital berbentuk QR Code dengan menggunakan Laravel 8 secara Fullstack. Projek ini dibuat untuk mencegah penggunaan tanda tangan berbentuk tulisan yang digitalkan karena sangat mudah untuk disalah gunakan oleh pihak yang tidak bertanggung jawab.\n
     Ketika QR Code di scan akan mengeluarkan data secara lengkap dari pihak yang menyetujui permintaan tanda tangan.\n
     Web yang dibuat sudah responsif dan sudah berfungsi sesuai dengan keinginan stakeholder yaitu koordinator program studi dan beberapa dosen.`,
+    titleEng: "QR Digital Signature System (SiTaTang)",
+    descEng: `This project is my thesis project, the purpose of this website is creating a digital signature in the form of a QR Code using Laravel 8 in Fullstack. This project was created to prevent the use of previous digital signatures in image form because they are very easy to be misused by irresponsible parties.\n
+    When the QR Code is scanned, complete data will be released from someone who approved the signature request.\n
+    The website created is responsive and all the working function is according to the wishes of stakeholders, which is the study program coordinator and several lecturers.`,
     link: undefined,
   },
   {
@@ -160,6 +183,14 @@ export const projek = [
     Website ini sudah memilki fitur autentikasi dan otorisasi. Website ini memiliki fitur filter ketika melakukan pencarian pekerjaan agar dapat menemukan pekerjaan yang sesuai.
     
     Website ini masih belum responsif dan beberapa fitur masih dalam tahap pembuatan.`,
+    titleEng: "Personal Project: BWA Job Hunt",
+    descEng: `This project is the result of one of the Fullstack Next JS classes on BuildWithAngga
+
+    This website is a job vacancy website that can be used from two sides, one side id for people looking for job vacancies and the second side is for companies that want to create job vacancies
+    
+    This website already has authentication and authorization features. This website has a filter feature when searching for jobs so you can find suitable work.
+    
+    This website is still not responsive and several features are still under construction.`,
     link: "https://bwa-job-hunt-340zg407l-yogarizky51.vercel.app/",
   },
   {
@@ -172,6 +203,14 @@ export const projek = [
     Website ini sudah memilki fitur autentikasi dan otorisasi. Website ini juga sudah memilki fungsi CRUD untuk membuat Company, dan juga CRUD untuk membuat lowongan kerja dari Company yang telah dibuat sebelumnya.
     
     Website ini masih belum responsif dan beberapa fitur masih belum selesai dibuat.`,
+    titleEng: "Personal Project: BWA Dashboard Job Hunt",
+    descEng: `This project is the result of one of the Fullstack Next JS classes on BuildWithAngga
+
+    This website is the dashboard of the BWA Job Hunt website
+    
+    This website already has authentication and authorization features. This website also has a CRUD function to create a Company, and also CRUD to create job vacancies from previously created Companies.
+    
+    This website is still not responsive and several features have not yet been completed.`,
     link: "https://bwa-dashboard-job-hunt-qa70yxcor-yogarizky51.vercel.app/",
   },
 ];
@@ -184,6 +223,9 @@ export const listPortofolio = [
     imgSrc: Vuejs,
     title: "Tugas Akhir Vue JS Sanbercode",
     desc: "Projek Sederhana dengan implementasi CRUD, autentikasi, dan autorisasi pada Vue JS",
+    titleEng: "Vue JS Sanbercode Final Project",
+    descEng:
+      "Simple Project with CRUD implementation, authentication and authorization in Vue JS",
     link: "https://sanbercode-vuejs-yoga.netlify.app/",
   },
   {
@@ -193,6 +235,10 @@ export const listPortofolio = [
     title:
       "Sistem Tanda Tangan (SiTaTang) Digital QR Code (Projek Akhir Skripsi)",
     desc: "Projek akhir skripsi saya yang menghasilkan tanda tangan digital berbentuk QR Code.\n Projek ini saya kerjakan fullstack dengan menggunakan Laravel",
+    titleEng:
+      "Digital QR Code Signature System (SiTaTang) (Final Thesis Project)",
+    descEng:
+      "Final project of my thesis that produce a digital signature in the form of a QR Code.\n I am working on this project as a Fullstack using Laravel",
     link: undefined,
   },
   {
@@ -201,6 +247,9 @@ export const listPortofolio = [
     imgSrc: LuxSpace,
     title: "Tugas Akhir Luxspace BWA",
     desc: "Projek ini merupakan projek hasil pelatihan Reactjs dan Tailwind CSS pada salah satu kelas di buildwithangga",
+    titleEng: "Luxspace BWA Final Project",
+    descEng:
+      "This project is a result from Reactjs and Tailwind CSS course online in one of the classes at buildwithangga",
     link: "https://luxspace-yoga-reactjs.netlify.app/",
   },
   {
@@ -209,6 +258,9 @@ export const listPortofolio = [
     imgSrc: YPU,
     title: "Tugas Akhir ReactJS Sanbercode - Website Lowongan Kerja",
     desc: "Website ini merupakan tugas akhir dari pelatihan reactjs di sanbercode. \n Website dibangun menggunakan Reactjs dan Tailwind CSS.",
+    titleEng: "Final Project ReactJS Sanbercode - Job Vacancies Website",
+    descEng:
+      "This website is the final assignment of ReactJS training in Sanbercode. \n Website built using Reactjs and Tailwind CSS.",
     link: "https://yang-penting-usaha.netlify.app/",
   },
   {
@@ -217,6 +269,9 @@ export const listPortofolio = [
     imgSrc: NextJS,
     title: "Tugas Akhir NextJS Sanbercode - Website E-Commerce",
     desc: "Website ini merupakan tugas akhir dari pelatihan Next Js di kelas sanbercode",
+    titleEng: "Final Project NextJS Sanbercode - E-Commerce Website",
+    descEng:
+      "This website is the final assignment of the Next Js training in the Sanbercode class",
     link: "https://sanbercode-nextjs-batch-39.vercel.app/",
   },
   {
@@ -225,14 +280,20 @@ export const listPortofolio = [
     imgSrc: Moonton,
     title: "Tugas Akhir Moonton Streaming Film BuildWithAngga ",
     desc: "Projek ini merupakan projek hasil pelatihan Laravel ReactJS dengan menggunakan inertia pada salah satu kelas di buildwithangga",
+    titleEng: "Final Assignment Moonton Streaming Film BuildWithAngga ",
+    descEng:
+      "This project is a result from Laravel ReactJS training using inertia in one of the classes at buildwithangga",
     link: undefined,
   },
   {
     id: 7,
     imgAlt: "BWA Job Hunt",
     imgSrc: BWAJobHunt,
-    title: "Tugas Akhir BWA Job Hunt Halaman Utama atau Publik BuildWithAngga ",
+    title: "Tugas Akhir BWA Job Hunt Halaman Utama atau Publik BuildWithAngga",
     desc: "Projek ini merupakan projek halaman utama atau publik dari web pencarian kerja hasil pelatihan NextJS di buildwithangga",
+    titleEng: "BWA Job Hunt Final Project Main or Public Page BuildWithAngga",
+    descEng:
+      "This project is a project to create the main or public page of the job search website from NextJS training at buildwithangga",
     link: "https://bwa-job-hunt-nine.vercel.app/",
   },
   {
@@ -240,8 +301,12 @@ export const listPortofolio = [
     imgAlt: "BWA Dashboard Job Hunt",
     imgSrc: BWADashJobHunt,
     title:
-      "Tugas Akhir BWA Job Hunt Halaman Dashboard Admin Posting Lowongan Pekerjaan BuildWithAngga ",
+      "Tugas Akhir BWA Job Hunt Halaman Dashboard Admin Posting Lowongan Pekerjaan BuildWithAngga",
     desc: "Projek ini merupakan projek dashboard admin untuk posting lowongan pekerjaan dari web pencarian kerja hasil pelatihan NextJS di buildwithangga",
+    titleEng:
+      "Final Project BWA Job Hunt Admin Dashboard Page to Post Job Vacancies BuildWithAngga",
+    descEng:
+      "This project is an admin dashboard project for posting job vacancies from the job search website from NextJS training at buildwithangga",
     link: "https://bwa-dashboard-job-hunt-qa70yxcor-yogarizky51.vercel.app/",
   },
 ];

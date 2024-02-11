@@ -1,0 +1,38 @@
+{
+  "select-lang": "Pilih Bahasa",
+  "navbar": {
+    "home": "Halaman Utama",
+    "about": "Tentang Saya",
+    "project": "Projek Saya",
+    "sosmed": "Media Sosial",
+    "contact": "Kontak Saya"
+  },
+  "hero": {
+    "welcome": "Selamat datang di portofolio saya",
+    "title1": "Halo, Saya",
+    "typing1": "Yoga Rizky Putra",
+    "typing2": "Frontend Web Developer",
+    "desc": "Walaupun saat ini fokus pada Frontend, tapi saya tertarik juga pada sisi Backend dan mungkin akan menjadi Fullstack Web Developer kedepannya",
+    "callMe": "Hubungi Saya",
+    "cv": "Download CV Saya"
+  },
+  "about": {
+    "about": "Tentang Saya",
+    "desc": "Halo, Saya Yoga Rizky Putra seorang Web Developer yang berfokus pada bagian Frontend, tetapi saya juga tertarik untuk mempelajari backend dan menjadi Fullstack kedepannya",
+    "skill": "kemampuan",
+    "project": "Projek",
+    "education": "Pendidikan",
+    "experience": "Pengalaman",
+    "formal": "Pendidikan Formal",
+    "nonFormal": "Pendidikan Non Formal",
+    "workExp": "Pengalaman Kerja Saya"
+  },
+  "portofolio": {
+    "subtitle": "Projek Saya",
+    "title": "Berikut Adalah Beberapa Screenshot Tampilan Projek Yang Pernah Saya Kerjakan"
+  },
+  "sosmed": {
+    "sosmed": "Sosial Media Saya",
+    "title": "Yuk Kenal Lebih Dekat Dengan Saya"
+  }
+}

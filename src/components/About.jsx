@@ -2,8 +2,8 @@ import { Accordion, Flowbite, Tabs } from "flowbite-react";
 import { Link } from "react-router-dom";
 import Yogajpg from "../assets/yoga.jpg";
 import { kemampuanProgressBar, projek } from "../data/data";
-import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 import { PieCharts } from "./organism/Pie-Chart";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   const customTheme = {
@@ -40,6 +40,8 @@ const About = () => {
     tabpanel: "py-3",
   };
 
+  const { t } = useTranslation();
+
   return (
     <Flowbite theme={{ theme: customTheme }}>
       <section id="about" className="border-b-4 border-blue-500 ">
@@ -48,104 +50,147 @@ const About = () => {
             <img className="rounded-r-full h-fit" src={Yogajpg} alt="mockup" />
           </div>
           <div className="mr-auto place-self-center text-center sm:text-left lg:col-span-6">
-            <p className="font-bold">Tentang Saya</p>
+            <p className="font-bold">{t("about.about")}</p>
             <h1 className="max-w-2xl mb-4 text-3xl font-bold tracking-tight leading-none md:text-3xl xl:text-4xl dark:text-white">
               <span className="text-blue-600">
                 Yoga Rizky Putra || Web Developer
               </span>
             </h1>
             <p className="max-w-2xl mb-6 font-light text-gray-900 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-              Halo, Saya Yoga Rizky Putra seorang Web Developer yang berfokus
-              pada bagian Frontend, tetapi saya juga tertarik untuk mempelajari
-              backend dan menjadi Fullstack kedepannya
+              {t("about.desc")}
             </p>
             <Tabs.Group
               theme={customTheme}
               aria-label="Pills"
               style="pills"
-              className="justify-center"
+              className="flex justify-center"
             >
-              <Tabs.Item active title="Kemampuan">
-                <div className="">
-                  <Tabs.Group
-                    theme={customTheme}
-                    aria-label="Pills"
-                    style="pills"
-                    className="flex justify-center"
-                  >
-                    <Tabs.Item active title="Progress Bar">
-                      {kemampuanProgressBar.map((item, index) => {
-                        return (
-                          <div key={item.id}>
-                            <div className="mb-1 text-base font-medium dark:text-white flex items-center">
-                              {item.title}
-                              <img
-                                className="w-6 h-6 ml-2"
-                                src={item.logo}
-                                alt={item.title}
-                              />
-                            </div>
-                            <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                              <div
-                                className="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500"
-                                style={{ width: item.width }}
-                              />
-                            </div>
+              <Tabs.Item active title={t("about.skill")}>
+                <Tabs.Group
+                  theme={customTheme}
+                  aria-label="Pills"
+                  style="pills"
+                  className="flex justify-center"
+                >
+                  <Tabs.Item active title="Progress Bar">
+                    {kemampuanProgressBar.map((item, index) => {
+                      return (
+                        <div key={item.id}>
+                          <div className="mb-1 text-base font-medium dark:text-white flex items-center">
+                            {item.title}
+                            <img
+                              className="w-6 h-6 ml-2"
+                              src={item.logo}
+                              alt={item.title}
+                            />
                           </div>
-                        );
-                      })}
-                    </Tabs.Item>
-                    <Tabs.Item title="Pie Chart">
-                      <div className="flex rounded-xl w-auto h-auto">
-                        <PieCharts />
-                      </div>
-                    </Tabs.Item>
-                  </Tabs.Group>
-                </div>
+                          <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                            <div
+                              className="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500"
+                              style={{ width: item.width }}
+                            />
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </Tabs.Item>
+                  <Tabs.Item title="Pie Chart">
+                    <div className="flex rounded-xl w-auto h-auto">
+                      <PieCharts />
+                    </div>
+                  </Tabs.Item>
+                </Tabs.Group>
               </Tabs.Item>
-              <Tabs.Item title="Projek">
-                <Accordion collapseAll>
-                  {projek.map((item, index) => (
-                    <Accordion.Panel key={item.id}>
-                      <Accordion.Title>{item.title}</Accordion.Title>
-                      <Accordion.Content>
-                        <p className="whitespace-pre-line mb-2 text-justify text-gray-500 dark:text-gray-400">
-                          {item.desc}
-                        </p>
-                        {item.link !== undefined ? (
-                          <h3 className="font-semibold">
-                            Link Projek:
-                            <Link
-                              target="_blank"
-                              to={item.link}
-                              className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                            >
-                              {item.link}
-                            </Link>
-                          </h3>
-                        ) : (
-                          <p>
-                            Link Projek: Tidak tersedia karena web sudah tidak
-                            aktif
-                          </p>
-                        )}
-                      </Accordion.Content>
-                    </Accordion.Panel>
-                  ))}
-                </Accordion>
+              <Tabs.Item title={t("about.project")}>
+                <Tabs.Group
+                  theme={customTheme}
+                  aria-label="Pills"
+                  style="pills"
+                  className="flex justify-center"
+                >
+                  <Tabs.Item active title="Bahasa Indonesia">
+                    <Accordion collapseAll>
+                      {projek.map((item, index) => (
+                        <Accordion.Panel key={item.id}>
+                          <Accordion.Title>{item.title}</Accordion.Title>
+                          <Accordion.Content>
+                            <p className="whitespace-pre-line mb-2 text-justify text-gray-500 dark:text-gray-400">
+                              {item.desc}
+                            </p>
+                            {item.link !== undefined ? (
+                              <h3 className="font-semibold">
+                                Link Projek:
+                                <Link
+                                  target="_blank"
+                                  to={item.link}
+                                  className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                >
+                                  {item.link}
+                                </Link>
+                              </h3>
+                            ) : (
+                              <>
+                                <p>
+                                  Link Projek: Tidak tersedia karena web sudah
+                                  tidak aktif
+                                </p>
+                              </>
+                            )}
+                          </Accordion.Content>
+                        </Accordion.Panel>
+                      ))}
+                    </Accordion>
+                  </Tabs.Item>
+                  <Tabs.Item title="English">
+                    <Accordion collapseAll>
+                      {projek.map((item, index) => (
+                        <Accordion.Panel key={item.id}>
+                          <Accordion.Title>{item.titleEng}</Accordion.Title>
+                          <Accordion.Content>
+                            <p className="whitespace-pre-line mb-2 text-justify text-gray-500 dark:text-gray-400">
+                              {item.descEng}
+                            </p>
+                            {item.link !== undefined ? (
+                              <h3 className="font-semibold">
+                                Link Projek:
+                                <Link
+                                  target="_blank"
+                                  to={item.link}
+                                  className="ml-2 font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                >
+                                  {item.link}
+                                </Link>
+                              </h3>
+                            ) : (
+                              <>
+                                <p>
+                                  Project Link: Project link is not available
+                                  because the hosting is already expired
+                                </p>
+                              </>
+                            )}
+                          </Accordion.Content>
+                        </Accordion.Panel>
+                      ))}
+                    </Accordion>
+                  </Tabs.Item>
+                </Tabs.Group>
               </Tabs.Item>
-              <Tabs.Item title="Pendidikan">
+              <Tabs.Item title={t("about.education")}>
                 <Accordion collapseAll>
                   <Accordion.Panel>
-                    <Accordion.Title>Pendidikan Formal</Accordion.Title>
+                    <Accordion.Title>{t("about.formal")}</Accordion.Title>
                     <Accordion.Content>
                       <ul className="text-justify max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-                        <li>Universitas Negeri Jakarta (2018 - 2023)</li>
+                        <li>
+                          Universitas Negeri Jakarta (Jakarta State University)
+                          (2018 - 2023)
+                        </li>
                       </ul>
                     </Accordion.Content>
                   </Accordion.Panel>
                   <Accordion.Panel>
-                    <Accordion.Title>Pendidikan Non Formal</Accordion.Title>
+                    <Accordion.Title>{t("about.nonFormal")}</Accordion.Title>
                     <Accordion.Content>
                       <ol className="text-justify space-y-4 text-gray-500 list-decimal list-inside dark:text-gray-400">
                         <li>
@@ -434,19 +479,21 @@ const About = () => {
                   </Accordion.Panel>
                 </Accordion>
               </Tabs.Item>
-              <Tabs.Item title="Pengalaman">
+              <Tabs.Item title={t("about.experience")}>
                 <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-                  Pengalaman Kerja Saya
+                  {t("about.workExp")}
                 </h2>
                 <div className="max-w-xs p-3 mt-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                   <h5 className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                     Frontend Web Developer
                   </h5>
                   <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                    Kementerian Riset dan Teknologi BRIN
+                    Kementerian Riset dan Teknologi BRIN <br /> (Ministry of
+                    Research and Technology BRIN)
                   </p>
                   <p className="inline-flex items-center text-blue-600">
-                    Februari 2021 - Mei 2021
+                    Februari 2021 - Mei 2021 <br />
+                    (February 2021 - May 2021)
                   </p>
                 </div>
               </Tabs.Item>
