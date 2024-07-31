@@ -22,28 +22,36 @@ export default function Header() {
           </Button>
         </HashLink>
         <SwitchTranslation />
-        {/* <button
-          type="button"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          Get started
-        </button> */}
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <HashLink smooth to="/#home">
-          <Navbar.Link>
-            <p>{t("navbar.home")}</p>
-          </Navbar.Link>
+        <HashLink
+          smooth
+          to="/#home"
+          className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+        >
+          <p>{t("navbar.home")}</p>
         </HashLink>
-        <HashLink smooth to="/#about">
-          <Navbar.Link>{t("navbar.about")}</Navbar.Link>
+        <HashLink
+          smooth
+          to="/#about"
+          className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+        >
+          {t("navbar.about")}
         </HashLink>
-        <HashLink smooth to="/#portofolio">
-          <Navbar.Link>{t("navbar.project")}</Navbar.Link>
+        <HashLink
+          smooth
+          to="/#portofolio"
+          className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+        >
+          {t("navbar.project")}
         </HashLink>
-        <HashLink smooth to="/#sosmed">
-          <Navbar.Link>{t("navbar.sosmed")}</Navbar.Link>
+        <HashLink
+          smooth
+          to="/#sosmed"
+          className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+        >
+          {t("navbar.sosmed")}
         </HashLink>
       </Navbar.Collapse>
     </Navbar>

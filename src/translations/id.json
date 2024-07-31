@@ -1,4 +1,5 @@
 {
+  "lang": "ID",
   "select-lang": "Pilih Bahasa",
   "navbar": {
     "home": "Halaman Utama",
@@ -34,5 +35,9 @@
   "sosmed": {
     "sosmed": "Sosial Media Saya",
     "title": "Yuk Kenal Lebih Dekat Dengan Saya"
+  },
+  "pagination": {
+    "next": "Selanjutnya",
+    "previous": "Sebelumnya"
   }
 }

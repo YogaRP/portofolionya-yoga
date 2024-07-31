@@ -5,6 +5,7 @@ import LogoReact from "../assets/reactjs-svgrepo-com.svg";
 import LogoNext from "../assets/nextjs-fill-svgrepo-com.svg";
 import LogoNuxt from "../assets/nuxt-svgrepo-com.svg";
 import LogoNest from "../assets/nestjs-svgrepo-com.svg";
+import LogoExpress from "../assets/express-svgrepo-com.svg";
 import Vuejs from "../assets/vuejs-sanber.png";
 import YPU from "../assets/yang-penting-usaha.png";
 import Skripsi from "../assets/halaman-home-skripsi.png";
@@ -13,6 +14,12 @@ import LuxSpace from "../assets/luxspace-yoga-reactjs.png";
 import Moonton from "../assets/dashboard-moonton.png";
 import BWAJobHunt from "../assets/bwa-job-hunt.png";
 import BWADashJobHunt from "../assets/bwa-dashboard-post-a-job.png";
+import Brainwave from "../assets/brainwave-jsm.png";
+import Iphone15 from "../assets/iphone15-jsm.png";
+import AuthJs from "../assets/authjs-cwa.png";
+import Evently from "../assets/evently-jsm.png";
+import Anime from "../assets/anime-deaafrizal.png";
+import Threads from "../assets/threads-asap.png";
 
 //Kemampuan di About
 export const kemampuanPieChart = [
@@ -22,24 +29,24 @@ export const kemampuanPieChart = [
     color: "#000000",
   },
   {
-    name: "Laravel",
-    value: 800,
-    color: "#ff4c41",
-  },
-  {
     name: "ReactJS",
-    value: 750,
+    value: 800,
     color: "#32e0ff",
   },
   {
-    name: "NestJS",
-    value: 500,
-    color: "#ea2845",
+    name: "Laravel",
+    value: 750,
+    color: "#ff4c41",
   },
   {
     name: "VueJS",
     value: 550,
     color: "#4dba87",
+  },
+  {
+    name: "NestJS",
+    value: 500,
+    color: "#ea2845",
   },
   {
     name: "NuxtJS",
@@ -63,27 +70,27 @@ export const kemampuanProgressBar = [
   },
   {
     id: 2,
-    title: "Laravel",
-    logo: LogoLaravel,
+    title: "ReactJS",
+    logo: LogoReact,
     width: "80%",
   },
   {
     id: 3,
-    title: "ReactJS",
-    logo: LogoReact,
-    width: "75%",
+    title: "Laravel",
+    logo: LogoLaravel,
+    width: "70%",
   },
   {
     id: 4,
-    title: "NestJS",
-    logo: LogoNest,
-    width: "50%",
-  },
-  {
-    id: 5,
     title: "VueJS",
     logo: LogoVue,
     width: "55%",
+  },
+  {
+    id: 5,
+    title: "NestJS",
+    logo: LogoNest,
+    width: "50%",
   },
   {
     id: 6,
@@ -226,6 +233,7 @@ export const listPortofolio = [
     titleEng: "Vue JS Sanbercode Final Project",
     descEng:
       "Simple Project with CRUD implementation, authentication and authorization in Vue JS",
+    techStack: "VueJS",
     link: "https://sanbercode-vuejs-yoga.netlify.app/",
   },
   {
@@ -234,11 +242,12 @@ export const listPortofolio = [
     imgSrc: Skripsi,
     title:
       "Sistem Tanda Tangan (SiTaTang) Digital QR Code (Projek Akhir Skripsi)",
-    desc: "Projek akhir skripsi saya yang menghasilkan tanda tangan digital berbentuk QR Code.\n Projek ini saya kerjakan fullstack dengan menggunakan Laravel",
+    desc: "Projek akhir skripsi saya yang menghasilkan tanda tangan digital berbentuk QR Code.",
     titleEng:
       "Digital QR Code Signature System (SiTaTang) (Final Thesis Project)",
     descEng:
-      "Final project of my thesis that produce a digital signature in the form of a QR Code.\n I am working on this project as a Fullstack using Laravel",
+      "Final project of my thesis that produce a digital signature in the form of a QR Code.",
+    techStack: "Laravel 8",
     link: undefined,
   },
   {
@@ -250,6 +259,7 @@ export const listPortofolio = [
     titleEng: "Luxspace BWA Final Project",
     descEng:
       "This project is a result from Reactjs and Tailwind CSS course online in one of the classes at buildwithangga",
+    techStack: "ReactJS, TailwindCSS",
     link: "https://luxspace-yoga-reactjs.netlify.app/",
   },
   {
@@ -257,10 +267,11 @@ export const listPortofolio = [
     imgAlt: "Tugas Akhir ReactJS Sanbercode - Website Lowongan Kerja",
     imgSrc: YPU,
     title: "Tugas Akhir ReactJS Sanbercode - Website Lowongan Kerja",
-    desc: "Website ini merupakan tugas akhir dari pelatihan reactjs di sanbercode. \n Website dibangun menggunakan Reactjs dan Tailwind CSS.",
+    desc: "Website ini merupakan tugas akhir dari pelatihan reactjs di sanbercode",
     titleEng: "Final Project ReactJS Sanbercode - Job Vacancies Website",
     descEng:
-      "This website is the final assignment of ReactJS training in Sanbercode. \n Website built using Reactjs and Tailwind CSS.",
+      "This website is the final assignment of ReactJS training in Sanbercode.",
+    techStack: "ReactJS",
     link: "https://yang-penting-usaha.netlify.app/",
   },
   {
@@ -272,28 +283,31 @@ export const listPortofolio = [
     titleEng: "Final Project NextJS Sanbercode - E-Commerce Website",
     descEng:
       "This website is the final assignment of the Next Js training in the Sanbercode class",
+    techStack: "NextJS",
     link: "https://sanbercode-nextjs-batch-39.vercel.app/",
   },
   {
     id: 6,
     imgAlt: "BWA Moonton Streaming Film",
     imgSrc: Moonton,
-    title: "Tugas Akhir Moonton Streaming Film BuildWithAngga ",
+    title: "Moonton, Streaming Film BuildWithAngga ",
     desc: "Projek ini merupakan projek hasil pelatihan Laravel ReactJS dengan menggunakan inertia pada salah satu kelas di buildwithangga",
     titleEng: "Final Assignment Moonton Streaming Film BuildWithAngga ",
     descEng:
       "This project is a result from Laravel ReactJS training using inertia in one of the classes at buildwithangga",
+    techStack: "Laravel, Inertia, ReactJS",
     link: undefined,
   },
   {
     id: 7,
     imgAlt: "BWA Job Hunt",
     imgSrc: BWAJobHunt,
-    title: "Tugas Akhir BWA Job Hunt Halaman Utama atau Publik BuildWithAngga",
+    title: "Tugas Akhir BWA Job Hunt Halaman Utama atau Publik",
     desc: "Projek ini merupakan projek halaman utama atau publik dari web pencarian kerja hasil pelatihan NextJS di buildwithangga",
-    titleEng: "BWA Job Hunt Final Project Main or Public Page BuildWithAngga",
+    titleEng: "BWA Job Hunt Final Project Main or Public Page",
     descEng:
       "This project is a project to create the main or public page of the job search website from NextJS training at buildwithangga",
+    techStack: "NextJS",
     link: "https://bwa-job-hunt-nine.vercel.app/",
   },
   {
@@ -301,12 +315,86 @@ export const listPortofolio = [
     imgAlt: "BWA Dashboard Job Hunt",
     imgSrc: BWADashJobHunt,
     title:
-      "Tugas Akhir BWA Job Hunt Halaman Dashboard Admin Posting Lowongan Pekerjaan BuildWithAngga",
-    desc: "Projek ini merupakan projek dashboard admin untuk posting lowongan pekerjaan dari web pencarian kerja hasil pelatihan NextJS di buildwithangga",
+      "Tugas Akhir BWA Job Hunt Dashboard Admin Posting Lowongan Pekerjaan",
+    desc: "Projek ini membuat dashboard admin untuk posting lowongan pekerjaan dari web pencarian kerja hasil pelatihan NextJS di buildwithangga",
     titleEng:
-      "Final Project BWA Job Hunt Admin Dashboard Page to Post Job Vacancies BuildWithAngga",
+      "Final Project BWA Job Hunt Admin Dashboard Page to Post Job Vacancies",
     descEng:
       "This project is an admin dashboard project for posting job vacancies from the job search website from NextJS training at buildwithangga",
+    techStack: "NextJS",
     link: "https://bwa-dashboard-job-hunt-qa70yxcor-yogarizky51.vercel.app/",
+  },
+  {
+    id: 9,
+    imgAlt: "BrainWave",
+    imgSrc: Brainwave,
+    title: "Desain Web Modern UI/UX Brainwave Javascript Mastery",
+    desc: "Projek ini merupakan projek latihan pembuatan desain web modern bernama Brainwave dari youtube Javascript Mastery",
+    titleEng: "Modern UI/UX Web Design Brainwave Javascript Mastery",
+    descEng:
+      "This project is an exercise to make a modern web design called Brainwave from Javascript Mastery Yotube Channel",
+    techStack: "ReactJS",
+    link: "https://brainwave-jsm-yoga.netlify.app/",
+  },
+  {
+    id: 10,
+    imgAlt: "Iphone15",
+    imgSrc: Iphone15,
+    title: "Membuat Ulang Web Iphone 15 - Javascript Mastery",
+    desc: "Projek ini merupakan projek membuat ulang website Iphone 15 dari youtube Javascript Mastery. \n\n (Efek 3 Dimensi hanya ada pada browser desktop)",
+    titleEng: "Remaking Iphone 15 Website - Javascript Mastery",
+    descEng:
+      "This project is remaking Iphone 15 Website from Javascript Mastery Yotube Channel. \n\n (The 3D effect only available on desktop browser)",
+    techStack: "Reactjs",
+    link: "https://iphone15-yoga-jsm.netlify.app/",
+  },
+  {
+    id: 11,
+    imgAlt: "AuthJS",
+    imgSrc: AuthJs,
+    title: "Mempelajari AuthJS atau NextAuthJs 5 pada NextJS - CodeWithAntonio",
+    desc: "Projek ini merupakan projek mendalami bagaimana NextAuthJs 5 atau AuthJs bekerja pada Next JS dari Youtube CodeWithAntonio",
+    titleEng:
+      "Learning about AuthJS or NextAuthJs 5 on NextJS - CodeWithAntonio",
+    descEng:
+      "This project is learning how NextAuthJs 5 or AuthJs work on NextJs from CodeWithAntonio Youtube Channel",
+    techStack: "NextJS",
+    link: "https://next14-authv5-auth-tutorial.vercel.app/",
+  },
+  {
+    id: 12,
+    imgAlt: "Evently",
+    imgSrc: Evently,
+    title: "Evently, Sebuah Aplikasi Web Manajemen Event - Javascript Mastery",
+    desc: "Projek ini merupakan projek membuat web app manajemen event dari Youtube Javascript Mastery",
+    titleEng: "Evently, Event Management Web App - Javascript Mastery",
+    descEng:
+      "This project is an event management web app from Javascript Mastery Youtube Channel",
+    techStack: "NextJS, MongoDB",
+    link: "https://evently-jsm-murex.vercel.app/",
+  },
+  {
+    id: 13,
+    imgAlt: "Anime",
+    imgSrc: Anime,
+    title: "Website List Anime Dengan Infinite Scroll - Dea Afrizal",
+    desc: "Projek ini membuat website list anime dengan fitur infinite scroll dari Youtube Dea Afrizal",
+    titleEng: "Anime List Website With Infinite Scroll - Dea Afrizal",
+    descEng:
+      "This project is an anime list website with infinite scroll feature from Dea Afrizal Youtube Channel",
+    techStack: "NextJS",
+    link: undefined,
+  },
+  {
+    id: 14,
+    imgAlt: "Threads",
+    imgSrc: Threads,
+    title: "Membuat Ulang Website Sosial Media Threads - As A Programmer",
+    desc: "Projek ini membuat ulang website sosial media Threads dengan dilengkapi fitur pesan atau percakapan pribadi menggunakan socket.io dari Youtube As A Programmer",
+    titleEng: "Remaking Threads Social Media Website - As A Programmer",
+    descEng:
+      "This project is remaking Threads social media with message or private conversation feature using socket.io from As A Programmer Youtube Channel",
+    techStack: "MongoDB, ExpressJS, ReactJS",
+    link: undefined,
   },
 ];

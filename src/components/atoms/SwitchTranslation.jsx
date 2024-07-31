@@ -11,8 +11,9 @@ const SwitchTranslation = () => {
     <Dropdown
       label=""
       renderTrigger={() => (
-        <span>
+        <span className="flex items-center">
           <CiGlobe className="w-6 h-6" />
+          <h2 className="font-bold">{t("lang")}</h2>
         </span>
       )}
     >

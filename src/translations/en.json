@@ -1,4 +1,5 @@
 {
+  "lang": "EN",
   "select-lang": "Choose Language",
   "navbar": {
     "home": "Home",
@@ -34,5 +35,9 @@
   "sosmed": {
     "sosmed": "My Social Media",
     "title": "Reach Me on My Social Media Below"
+  },
+  "pagination": {
+    "next": "Next",
+    "previous": "Previous"
   }
 }

@@ -86,6 +86,7 @@ export const PieCharts = () => {
         <ul className="mt-8 list-inside px-3 grid grid-cols-2 ">
           {data.map((item, index) => (
             <li
+              key={index}
               className={`font-semibold text-lg text-center`}
               style={{ color: `${item.color}` }}
             >
