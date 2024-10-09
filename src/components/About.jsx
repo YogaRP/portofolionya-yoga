@@ -7,12 +7,12 @@ import { useTranslation } from "react-i18next";
 
 const About = () => {
   const customTheme = {
-    base: "flex flex-col gap-2",
+    base: "flex flex-col gap-2 ",
     tablist: {
       base: "flex text-center",
       styles: {
         pills:
-          "flex-wrap font-medium text-sm text-blue-500 dark:text-gray-400 ",
+          "flex-wrap font-medium text-sm text-blue-500 flex-col sm:flex-row",
       },
       tabitem: {
         base: "flex items-center justify-center mt-2 mr-2 px-4 py-2 rounded-t-lg text-sm font-medium first:ml-0 disabled:cursor-not-allowed disabled:text-gray-400 disabled:dark:text-gray-500 focus:ring-4 focus:ring-cyan-300 focus:outline-none",
@@ -118,7 +118,7 @@ const About = () => {
                               {item.desc}
                             </p>
                             {item.link !== undefined ? (
-                              <h3 className="font-semibold">
+                              <h3 className="font-semibold text-left">
                                 Link Projek:
                                 <Link
                                   target="_blank"
@@ -130,7 +130,7 @@ const About = () => {
                               </h3>
                             ) : (
                               <>
-                                <p>
+                                <p className="text-left">
                                   Link Projek: Tidak tersedia karena web sudah
                                   tidak aktif
                                 </p>

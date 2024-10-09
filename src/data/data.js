@@ -220,6 +220,44 @@ export const projek = [
     This website is still not responsive and several features have not yet been completed.`,
     link: "https://bwa-dashboard-job-hunt-qa70yxcor-yogarizky51.vercel.app/",
   },
+  {
+    id: 10,
+    title: "Projek Pribadi:Tugas Akhir Vue JS Sanbercode",
+    desc: `Projek ini merupakan hasil tugas akhir dari bootcamp VueJS Sanbercode
+
+    Projek Sederhana dengan implementasi CRUD, autentikasi, dan autorisasi pada Vue JS
+    
+    Website ini masih belum responsif.`,
+    titleEng: "Vue JS Sanbercode Final Project",
+    descEng: `This project is the result of final assignment from Sanbercode VueJS Bootcamp
+
+    Simple Project with CRUD implementation, authentication and authorization in Vue JS
+    
+    This website is still not responsive.`,
+    link: "https://sanbercode-vuejs-yoga.netlify.app/",
+  },
+  {
+    id: 11,
+    title: "Moonton, Streaming Film BuildWithAngga",
+    desc: "Projek ini merupakan projek hasil pelatihan Laravel ReactJS dengan menggunakan inertia pada salah satu kelas di buildwithangga",
+    titleEng: "Final Assignment Moonton Streaming Film BuildWithAngga ",
+    descEng:
+      "This project is a result from Laravel ReactJS training using inertia in one of the classes at buildwithangga",
+    link: undefined,
+  },
+  {
+    id: 11,
+    title: "Desain Web Modern UI/UX Brainwave Javascript Mastery",
+    desc: `Projek ini merupakan projek latihan pembuatan desain web modern bernama Brainwave dari youtube Javascript Mastery
+
+    Tujuan utama dari pembuatan web ini yaitu untuk membuat web dengan desain yang modern dan ada tambahan efek efek yang menarik
+    
+    Web yang dibuat sudah responsif`,
+    titleEng: "Modern UI/UX Web Design Brainwave Javascript Mastery",
+    descEng:
+      "This project is an exercise to make a modern web design called Brainwave from Javascript Mastery Yotube Channel",
+    link: "https://brainwave-jsm-yoga.netlify.app/",
+  },
 ];
 
 //List Portofolio di Portofolio
@@ -290,7 +328,7 @@ export const listPortofolio = [
     id: 6,
     imgAlt: "BWA Moonton Streaming Film",
     imgSrc: Moonton,
-    title: "Moonton, Streaming Film BuildWithAngga ",
+    title: "Moonton, Streaming Film BuildWithAngga",
     desc: "Projek ini merupakan projek hasil pelatihan Laravel ReactJS dengan menggunakan inertia pada salah satu kelas di buildwithangga",
     titleEng: "Final Assignment Moonton Streaming Film BuildWithAngga ",
     descEng:
